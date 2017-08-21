@@ -81,9 +81,9 @@ public class ContinuousScrollableImageView extends LinearLayout {
     int DEFAULT_SCALE_TYPE = FIT_CENTER;
     //</editor-fold>
 
-    private static final int DEFAULT_RESOURCE_ID = -1;
-    private static final int DEFAULT_DURATION = 3000;
-    private static int DIRECTION_MULTIPLIER = -1;
+    private final int DEFAULT_RESOURCE_ID = -1;
+    private final int DEFAULT_DURATION = 3000;
+    private int DIRECTION_MULTIPLIER = -1;
 
     private int duration;
     private int resourceId;

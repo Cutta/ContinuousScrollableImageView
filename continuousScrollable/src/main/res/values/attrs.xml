@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ContinuousScrollableImageView">
+        <attr name="imageSrc" format="reference" />
+        <attr name="direction"/>
+        <attr name="duration" format="integer" />
+        <attr name="scaleType"/>
+    </declare-styleable>
+
+
+    <attr name="direction">
+        <enum name="up" value="0" />
+        <enum name="right" value="1" />
+        <enum name="down" value="2" />
+        <enum name="left" value="3" />
+    </attr>
+
+    <attr name="scaleType">
+        <enum name = "matrix" value="0"/>
+        <enum name = "fitXy" value="1"/>
+        <enum name = "fitStart" value="2"/>
+        <enum name = "fitCenter" value="3"/>
+        <enum name = "fitEnd" value="4"/>
+        <enum name = "center" value="5"/>
+        <enum name = "centerCrop" value="6"/>
+        <enum name = "centerInside" value="7"/>
+    </attr>
+
+</resources>

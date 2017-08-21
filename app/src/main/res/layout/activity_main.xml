@@ -10,17 +10,19 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:background="@color/gifSkyColor">
+        android:background="@color/gifSkyColor"
+        android:orientation="vertical">
+
+        <!-- for adding programatically remove these lines -->
 
         <com.cunoraz.continuouscrollable.ContinuousScrollableImageView
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
             app:direction="right"
-            app:scaleType="centerInside"
             app:duration="2500"
-            app:imageSrc="@drawable/plane"/>
+            app:imageSrc="@drawable/plane"
+            app:scaleType="centerInside" />
 
         <com.cunoraz.continuouscrollable.ContinuousScrollableImageView
             android:id="@+id/image"
@@ -35,9 +37,9 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            app:duration="6000"
             app:direction="left"
-            app:imageSrc="@drawable/mountain"/>
+            app:duration="6000"
+            app:imageSrc="@drawable/mountain" />
 
     </LinearLayout>
 

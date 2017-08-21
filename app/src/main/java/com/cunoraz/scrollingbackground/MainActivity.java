@@ -20,6 +20,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         rootLayout = (LinearLayout) findViewById(R.id.root_layout);
 
+        /**
+         *  before uncomment these lines remove ContinuousScrollableImageView in activity_main layout
+         */
+
        /* rootLayout = (LinearLayout) findViewById(R.id.root_layout);
         image = new ContinuousScrollableImageView(this);
         image.setResourceId(R.drawable.bg_sample);
@@ -35,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
                 .setDuration(3000)
                 .setScaleType(ContinuousScrollableImageView.FIT_XY)
                 .build();
+                rootLayout.addView(image);
         image.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
 
         rootLayout.addView(image);*/
